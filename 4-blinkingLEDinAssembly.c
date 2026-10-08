@@ -36,6 +36,8 @@
 #include <stdint.h>
 int main(void)
 {
+    
+/*
 //blue LED
 /*enabling pins*/
 	uint32_t* rcc_b = (uint32_t*) (0x40021000 + 0x4c);
@@ -55,14 +57,14 @@ int main(void)
 /*turn off*/
 	*gpio_b = *gpio_b & ~(1U << 7);
 	uint32_t e = *gpio_b;
-	
+*/
 	
 	__asm__ volatile (
 	"LDR R0, =0x40021000\n\t" // Load address to R0
 	"ADD R0, #0x4c" //add the offset to the base address
 	"LDR R1, [R0]\n\t" // Load value of R0 to R1
 	"ORR R1, R1, #2    \n"
-   "STR R1, R2     \n"
+    "STR R1, R2     \n"
 	
 	"LDR R3, =0x48000400\n\t"
 	"ORR R3, R3, #0x4000"
@@ -75,8 +77,8 @@ int main(void)
 	"ORR R6, R6, #0x80"
 	"STR R6, R7"
 	
-   "BIC {R6,} R6, 0x80"
-   "STR R6,R8"
+    "BIC {R6,} R6, 0x80"
+    "STR R6,R8"
 			
 	);
 	while (1);

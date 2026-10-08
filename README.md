@@ -16,6 +16,10 @@ What user LEDs are available on the NUCLEO-L4R5ZI-P board?
 4. Should they be configured as input or output? Why?
 
 1. There are three USER LEDS, LD1-3. These are connected to the MCUs GPIO pins which lets us turn them off or on using software. They are memory-mapped, so the MCU can read them as if they are a memory address. Pin names: PC7 (green), PB7 (blue), PB14(red)
-2. 
-3. 
-4. 
+2.
+3.
+4.
+
+## Video
+
+[Watch or download IMG_3378.MOV](videos/IMG_3378.MOV)

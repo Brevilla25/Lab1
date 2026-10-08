@@ -22,4 +22,4 @@ What user LEDs are available on the NUCLEO-L4R5ZI-P board?
 
 ## Video
 
-[Watch or download IMG_3378.MOV](videos/IMG_3378.MOV)
+[Watch or download IMG_3378.MOV](3-blink/IMG_3378.MOV)

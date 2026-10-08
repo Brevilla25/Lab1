@@ -1,12 +1,8 @@
 # Lab1
 
 #Part 2 - Flashing & Debugging Code 
-1. As the code begins to The LD 4 on the STM32 flashes green and red and creates new folders, a debugging window on the right is opened up where you can add variable expressions to watch. A debug folder is made. To look at what part of memory is written to on the MCU you can look at the map file, under the "Linker script and memory map" section. A USB cord is used to connect/communicate to your STM32 board from your computer, we also had to install USB drivers when installing the application to recongnize this specific USB connection, and the communcation/connection updates are outputted in the console. 
+1. As the code begins to The LD 4 on the STM32 flashes green and red and creates new folders, a debugging window on the right is opened up where you can add variable expressions to watch. A debug folder is made. To look at what part of memory is written to on the MCU you can look at the map file, under the "Linker script and memory map" section. A USB cord is used to connect/communicate to your STM32 board from your computer, we also had to install USB drivers when installing the application to recongnize this specific USB connection, and the communcation/connection updates are outputted in the console. To transfer a compiled binary to the STM32 microcontroller, you use a combination of a hardware tool (ST-LINK or J-Link) aka a programmer or debugger, a software tool, and an underlying communication protocol (SWD or JTAG)
 
-What tool or protocol is used to transfer the compiled binary to the microcontroller?
-
-2. ![alt text](2-flash/image.png) - BEFORE 
-![alt text](2-flash/image-1.png) - AFTER
 
 #Part 3 - Blinking LEDS
 

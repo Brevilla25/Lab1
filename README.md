@@ -10,15 +10,7 @@ What tool or protocol is used to transfer the compiled binary to the microcontro
 
 #Part 3 - Blinking LEDS
 
-What user LEDs are available on the NUCLEO-L4R5ZI-P board?
-2. What are the pin names (e.g., PA5, PB13, etc.) associated with each LED?
-3. Are these pins configured as GPIOs? What does that mean?
-4. Should they be configured as input or output? Why?
-
-1. There are three USER LEDS, LD1-3. These are connected to the MCUs GPIO pins which lets us turn them off or on using software. They are memory-mapped, so the MCU can read them as if they are a memory address. Pin names: PC7 (green), PB7 (blue), PB14(red)
-2.
-3.
-4.
+ There are three USER LEDS, LD1-3. These are connected to the MCUs GPIO pins which lets us turn them off or on using software. They are memory-mapped, so the MCU can read them as if they are a memory address. Pin names: PC7 (green), PB7 (blue), PB14(red). The pins are configured as GPIO's, that means means setting a pin on a microcontroller (STM32) or processor to act as a programmable digital signal line rather than a fixed hardware function. They should be configured as output because we want the pin to actively drives an electrical voltage outward to control an external component (aka turning an LED on/off).
 
 ## Video
 
